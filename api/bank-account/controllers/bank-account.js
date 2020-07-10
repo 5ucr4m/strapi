@@ -16,4 +16,12 @@ module.exports = {
       sanitizeEntity(entity, { model: strapi.models["bank-account"] })
     );
   },
+  async create(ctx) {
+    let entity;
+    entity = await strapi.services["bank-account"].create({
+      ...ctx.request.body,
+      user: ctx.state.user,
+    });
+    return sanitizeEntity(entity, { model: strapi.models["bank-account"] });
+  },
 };
