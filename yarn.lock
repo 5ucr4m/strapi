@@ -8817,7 +8817,7 @@ strapi-provider-upload-local@3.0.5:
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.0.5.tgz#f11a844f6a07a980e417d93b230ce062bf38550d"
   integrity sha512-FSMa9KnMhXY2c9o+mqAuEKjURp9hgr2zNYASN88ZIw+hGuJvspdssDHSNMEal9neFKzohEhQmhpSXdDYp/fVHw==
 
-strapi-utils@3.0.5:
+strapi-utils@3.0.5, strapi-utils@^3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.5.tgz#67c0fa7be6f5e31c1a675c1211d2242b9fafa67d"
   integrity sha512-XcVZgdBzk9SHwePk6IUMibJ5/z4aQDrVo3l97a/19QEJmVRYPkJfSYQfxV+6A41HaiHGN+kKbIgG4lAlT4dN0w==
