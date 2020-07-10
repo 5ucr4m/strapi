@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bank_accounts",
+  "info": {
+    "name": "bank"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "overdraft": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "operations": {
+      "collection": "operations"
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "teste": {
+      "via": "bank",
+      "model": "teste"
+    }
+  }
+}

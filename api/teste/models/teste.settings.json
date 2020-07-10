@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testes",
+  "info": {
+    "name": "teste"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "bank": {
+      "model": "bank-account",
+      "via": "teste"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operations",
+  "info": {
+    "name": "Operations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "value": {
+      "type": "decimal",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "incoming",
+        "outcoming"
+      ],
+      "default": "outcoming"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
