@@ -8,10 +8,5 @@
     "increments": true,
     "timestamps": true
   },
-  "attributes": {
-    "bank": {
-      "model": "bank-account",
-      "via": "teste"
-    }
-  }
+  "attributes": {}
 }

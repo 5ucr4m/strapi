@@ -27,9 +27,6 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "operations": {
-      "collection": "operations"
-    },
     "file": {
       "model": "file",
       "via": "related",
@@ -39,9 +36,9 @@
       "plugin": "upload",
       "required": false
     },
-    "teste": {
+    "operations": {
       "via": "bank",
-      "model": "teste"
+      "collection": "operations"
     }
   }
 }

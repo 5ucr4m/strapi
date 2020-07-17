@@ -40,6 +40,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "bank": {
+      "model": "bank-account",
+      "via": "operations"
     }
   }
 }

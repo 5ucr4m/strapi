@@ -584,33 +584,6 @@
               }
             }
           },
-          "operations": {
-            "required": [
-              "id",
-              "description",
-              "value"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "value": {
-                "type": "number"
-              },
-              "type": {
-                "type": "string"
-              },
-              "user": {
-                "type": "string"
-              },
-              "file": {
-                "type": "string"
-              }
-            }
-          },
           "file": {
             "required": [
               "id",
@@ -672,16 +645,36 @@
               }
             }
           },
-          "teste": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "bank": {
-                "type": "string"
+          "operations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "description",
+                "value"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "number"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -708,10 +701,10 @@
             "type": "string"
           },
           "operations": {
-            "type": "string"
-          },
-          "teste": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

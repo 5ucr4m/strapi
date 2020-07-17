@@ -635,6 +635,39 @@
                 "type": "string"
               }
             }
+          },
+          "bank": {
+            "required": [
+              "id",
+              "name",
+              "overdraft"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "active": {
+                "type": "boolean"
+              },
+              "overdraft": {
+                "type": "number"
+              },
+              "user": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              },
+              "operations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -660,6 +693,9 @@
             ]
           },
           "user": {
+            "type": "string"
+          },
+          "bank": {
             "type": "string"
           }
         }
